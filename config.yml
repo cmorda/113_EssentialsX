@@ -1,0 +1,417 @@
+# 
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+ops-name-color: '4'
+nickname-prefix: ''
+max-nick-length: 50
+change-displayname: true
+teleport-safety: true
+teleport-cooldown: 0
+teleport-delay: 0
+teleport-invulnerability: 4
+heal-cooldown: 60
+permission-based-item-spawn: false
+spawnmob-limit: 10
+warn-on-smite: true
+socialspy-commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+player-commands:
+- afk
+- afk.auto
+- back
+- back.ondeath
+- balance
+- balance.others
+- balancetop
+- build
+- chat.color
+- chat.format
+- chat.shout
+- chat.question
+- clearinventory
+- compass
+- depth
+- delhome
+- getpos
+- geoip.show
+- help
+- helpop
+- home
+- home.others
+- ignore
+- info
+- itemdb
+- kit
+- kits.tools
+- list
+- mail
+- mail.send
+- me
+- motd
+- msg
+- msg.color
+- nick
+- near
+- pay
+- ping
+- protect
+- r
+- rules
+- realname
+- seen
+- sell
+- sethome
+- setxmpp
+- signs.create.protection
+- signs.create.trade
+- signs.break.protection
+- signs.break.trade
+- signs.use.balance
+- signs.use.buy
+- signs.use.disposal
+- signs.use.enchant
+- signs.use.free
+- signs.use.gamemode
+- signs.use.heal
+- signs.use.info
+- signs.use.kit
+- signs.use.mail
+- signs.use.protection
+- signs.use.repair
+- signs.use.sell
+- signs.use.time
+- signs.use.trade
+- signs.use.warp
+- signs.use.weather
+- spawn
+- suicide
+- time
+- tpa
+- tpaccept
+- tpahere
+- tpdeny
+- warp
+- warp.list
+- world
+- worth
+- xmpp
+kits:
+  Shop:
+    delay: 86400
+    items:
+    - 389 1
+    - 323 1
+    - 331 1
+    - 54 1
+    - 286 1
+  Claim:
+    delay: 7200
+    items:
+    - 280 1 name:&9Mighty&4[Claim]&9Stick
+    - 284 1 name:&9Mighty&4[Claim]&9Shovel
+  vip:
+    delay: 86400
+    items:
+    - 267 1 durability:2 sharpness:3 fireaspect:1 looting:1 name:&e[VIP]&6Kit&5_Sword
+    - 257 1 durability:2 efficiency:3 fortune:2 silktouch:1 name:&e[VIP]&6Kit&5_Pickaxe
+    - 256 1 durability:2 efficiency:3 silktouch:1 name:&e[VIP]&6Kit&5_Shovel
+    - 258 1 durability:2 efficiency:3 fortune:2 name:&e[VIP]&6Kit&5_Axe
+    - 306 1 durability:2 protection:3 respiration:2 name:&e[VIP]&6Kit&5_Helmet
+    - 307 1 durability:2 protection:3 name:&e[VIP]&6Kit&5_Chestplate
+    - 308 1 durability:2 protection:3 name:&e[VIP]&6Kit&5_Leggings
+    - 309 1 durability:2 protection:3 featherfalling:2 name:&e[VIP]&6Kit&5_Boots
+    - 346 1 unbreaking:2 luckofsea:2 lure:1 name:&e[VIP]&6Kit&5_Fishing_Rod
+    - 261 1 unbreaking:2 power:2 name:&e[VIP]&6Kit&5_Bow
+    - 262 64
+    - 393 64
+  tools:
+    delay: 0
+    items:
+    - STONE_SWORD 1
+    - STONE_SPADE 1
+    - STONE_PICKAXE 1
+    - STONE_AXE 1
+  dtools:
+    delay: 600
+    items:
+    - 278 1 efficiency:1 durability:1 fortune:1 name:&4Gigadrill lore:The_drill_that_&npierces|the_heavens
+    - 277 1 digspeed:3 name:Dwarf lore:Diggy|Diggy|Hole
+    - 298 1 color:255,255,255 name:Top_Hat lore:Good_day,_Good_day
+    - 279:780 1
+  notch:
+    delay: 6000
+    items:
+    - 397:3 1 player:Notch
+  color:
+    delay: 6000
+    items:
+    - 387 1 title:&4Book_&9o_&6Colors author:KHobbits lore:Ingame_color_codes book:Colors
+  firework:
+    delay: 6000
+    items:
+    - 401 1 name:Angry_Creeper color:red fade:green type:creeper power:1
+    - 401 1 name:StarryNight color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
+    - 401 2 name:SolarWind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
+  Youtuber:
+    delay: 86400
+    items:
+    - EXP_BOTTLE 32
+    - ENDER_PEARL 8
+    - COOKED_BEEF 48
+    - GOLDEN_APPLE 5
+    - ARROW 64
+    - ARROW 16
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - BLAZE_POWDER 1
+    - NETHER_STALK 5
+    - IRON_CHESTPLATE 1 name:&4[Youtuber]&6Kit_&5Chestplate protection_environmental:3 durability:2
+    - IRON_HELMET 1 name:&4[Youtuber]&6Kit_&5Helmet protection_environmental:3 durability:1 oxygen:2 water_worker:1
+    - IRON_LEGGINGS 1 name:&4[Youtuber]&6Kit_&5Leggings protection_environmental:3 durability:2
+    - IRON_BOOTS 1 name:&4[Youtuber]&6Kit_&5Boots protection_environmental:3 frost_walker:1 durability:1 protection_fall:2
+    - FISHING_ROD 1 name:&4[Youtuber]&6Kit_&5Fishing_Rod durability:2 lure:3
+    - IRON_SWORD 1 name:&4[Youtuber]&6Kit_&5Sword damage_all:2 durability:1 fire_aspect:1 loot_bonus_mobs:3
+    - IRON_PICKAXE 1 name:&4[Youtuber]&6Kit_&5Pickaxe dig_speed:5 silk_touch:1 durability:2
+  VIP:
+    delay: 86400
+    items:
+    - BOW 1 name:&e[VIP]&6Kit&5_Bow arrow_damage:2 durability:2
+    - ARROW 64
+    - BAKED_POTATO 64
+    - FISHING_ROD 1 name:&e[VIP]&6Kit&5_Fishing_Rod luck:2 durability:2 lure:1
+    - IRON_BOOTS 1 name:&e[VIP]&6Kit&5_Boots protection_environmental:3 durability:2 protection_fall:2
+    - IRON_CHESTPLATE 1 name:&e[VIP]&6Kit&5_Chestplate protection_environmental:3 durability:2
+    - IRON_AXE 1 name:&e[VIP]&6Kit&5_Axe dig_speed:3 durability:2 loot_bonus_blocks:2
+    - IRON_SPADE 1 name:&e[VIP]&6Kit&5_Shovel dig_speed:3 silk_touch:1 durability:2
+    - IRON_PICKAXE 1 name:&e[VIP]&6Kit&5_Pickaxe dig_speed:3 silk_touch:1 durability:2 loot_bonus_blocks:2
+    - IRON_SWORD 1 name:&e[VIP]&6Kit&5_Sword damage_all:3 durability:2 fire_aspect:1 loot_bonus_mobs:1
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - LINGERING_POTION 1
+    - IRON_HELMET 1 name:&e[VIP]&6Kit&5_Helmet protection_environmental:3 oxygen:2 durability:2
+    - IRON_LEGGINGS 1 name:&e[VIP]&6Kit&5_Leggings protection_environmental:3 durability:2
+    - LINGERING_POTION 1
+  enderfarm:
+    delay: 1
+    items:
+    - COBBLESTONE 1
+    - ANVIL 1
+    - MINECART 1
+    - NAME_TAG 1 name:endermite,_dont_kill
+    - STEP:3 1
+    - ENDER_PEARL 16
+    - RAILS 1
+    - DIAMOND_BOOTS 1 protection_environmental:3
+    - IRON_LEGGINGS 1 mending:1 protection_explosions:4
+    - DIAMOND_CHESTPLATE 1 protection_environmental:3
+    - DIAMOND_HELMET 1 durability:3
+  Vip:
+    delay: 86400
+    items:
+    - IRON_HELMET 1 name:&e[VIP]&6Kit&5_Helmet protection_environmental:3 oxygen:2 durability:2
+    - IRON_CHESTPLATE 1 name:&e[VIP]&6Kit&5_Chestplate protection_environmental:3 durability:2
+    - IRON_LEGGINGS 1 name:&e[VIP]&6Kit&5_Leggings protection_environmental:3 durability:2
+    - IRON_BOOTS 1 name:&e[VIP]&6Kit&5_Boots protection_environmental:3 durability:2 protection_fall:2
+    - IRON_SWORD 1 name:&e[VIP]&6Kit&5_Sword damage_all:3 durability:2 fire_aspect:1 loot_bonus_mobs:1
+    - BOW 1 name:&e[VIP]&6Kit&5_Bow arrow_damage:2 durability:2
+    - IRON_AXE 1 name:&e[VIP]&6Kit&5_Axe dig_speed:3 durability:2 loot_bonus_blocks:2
+    - IRON_SPADE 1 name:&e[VIP]&6Kit&5_Shovel dig_speed:3 silk_touch:1 durability:2
+    - IRON_PICKAXE 1 name:&e[VIP]&6Kit_&5Pickaxe dig_speed:4 silk_touch:1 durability:2
+    - BAKED_POTATO 64
+    - ARROW 64
+    - DRAGONS_BREATH 2
+    - FISHING_ROD 1 name:&e[VIP]&6Kit&5_Fishing_Rod luck:2 durability:2 lure:1
+  Cowegg:
+    delay: 1
+    items:
+    - MONSTER_EGG 1
+  Sheepegg:
+    delay: 1
+    items:
+    - MONSTER_EGG 1
+  Villageregg:
+    delay: 1
+    items:
+    - MONSTER_EGG 1
+enabledSigns:
+- warp
+- color
+- kit
+- disposal
+- free
+- balance
+- mail
+- weather
+- time
+- enchant
+- repair
+sign-use-per-second: 4
+backup:
+  interval: 30
+per-warp-permission: true
+list:
+  Admins: owner admin
+debug: false
+remove-god-on-disconnect: false
+auto-afk: 300
+auto-afk-kick: 1200
+freeze-afk-players: false
+disable-item-pickup-while-afk: false
+cancel-afk-on-interact: true
+cancel-afk-on-move: true
+death-messages: true
+allow-silent-join-quit: false
+custom-join-message: none
+custom-quit-message: none
+world-teleport-permissions: false
+default-stack-size: -1
+oversized-stacksize: 64
+repair-enchanted: true
+unsafe-enchantments: false
+register-back-in-listener: false
+login-attack-delay: 5
+max-fly-speed: 0.8
+max-walk-speed: 0.8
+mails-per-minute: 1000
+max-tempban-time: -1
+update-bed-at-daytime: true
+world-home-permissions: false
+sethome-multiple:
+  default: 3
+  vip: 5
+  staff: 10
+tpa-accept-cancellation: 120
+starting-balance: 0
+currency-symbol: $
+max-money: 10000000000000
+min-money: -10000
+economy-log-enabled: false
+non-ess-in-help: true
+hide-permissionless-help: true
+chat:
+  radius: 0
+  group-formats:
+    Member: '&e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Trusted: '&0[&9Trusted&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    VIP: '&0[&aVIP&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Moderator: '&0[&3Moderator&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Admin: '&0[&bAdmin&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    CoOwner: '&0[&4Co-Owner&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Owner: '&0[&4Owner&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Helper: '&0[&dHelper&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
+    Lionheartian: '&0[&fLH&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
+    Youtuber: '&0[&cYoutuber&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
+protect:
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: false
+    tnt-playerdamage: false
+    tnt-minecart-explosion: false
+    tnt-minecart-playerdamage: false
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-playerdamage: false
+    witherskull-explosion: false
+    witherskull-playerdamage: false
+    wither-spawnexplosion: false
+    wither-blockreplace: false
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    entitytarget: false
+    spawn:
+      creeper: false
+      skeleton: false
+      spider: false
+      giant: false
+      zombie: false
+      slime: false
+      ghast: false
+      pig_zombie: false
+      enderman: false
+      cave_spider: false
+      silverfish: false
+      blaze: false
+      magma_cube: false
+      ender_dragon: false
+      pig: false
+      sheep: false
+      cow: false
+      chicken: false
+      squid: false
+      wolf: false
+      mushroom_cow: false
+      snowman: false
+      ocelot: false
+      iron_golem: false
+      villager: false
+      wither: false
+      bat: false
+      witch: false
+      horse: false
+  creeper:
+    max-height: -1
+  disable:
+    fall: false
+    pvp: false
+    drown: false
+    suffocate: false
+    lavadmg: false
+    projectiles: false
+    contactdmg: false
+    firedmg: false
+    lightning: false
+    wither: false
+    weather:
+      storm: false
+      thunder: false
+      lightning: false
+    build: true
+    use: true
+    warn-on-build-disallow: true
+  alert:
+    on-placement: 10,11,46,327
+    on-use: 327
+  blacklist:
+    placement: 10,11,46,327
+    usage: 327
+newbies:
+  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  spawnpoint: newbies
+  kit: tools
+respawn-listener-priority: high
+respawn-at-home: false
