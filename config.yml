@@ -27,10 +27,10 @@
 ops-name-color: '4'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
-nickname-prefix: '~'
+nickname-prefix: ''
 
 # The maximum length allowed in nicknames. The nickname prefix is included in this.
-max-nick-length: 15
+max-nick-length: 50
 
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
@@ -294,6 +294,17 @@ pastebin-createkit: false
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
+  - warp
+  - color
+  - kit
+  - disposal
+  - free
+  - balance
+  - mail
+  - weather
+  - time
+  - enchant
+  - repair
   #- color
   #- balance
   #- buy
@@ -336,7 +347,7 @@ backup:
   #command: 'rdiff-backup World1 backups/World1'
 
 # Set this true to enable permission per warp.
-per-warp-permission: false
+per-warp-permission: true
 
 # Sort output of /list command by groups.
 # You can hide and merge the groups displayed in /list by defining the desired behaviour here.
@@ -375,7 +386,7 @@ auto-afk: 300
 # After this timeout in seconds, the user will be kicked from the server.
 # essentials.afk.kickexempt node overrides this feature.
 # Set to -1 for no timeout.
-auto-afk-kick: -1
+auto-afk-kick: 1200
 
 # Set this to true, if you want to freeze the player, if the player is AFK.
 # Other players or monsters can't push the player out of AFK mode then.
@@ -660,6 +671,15 @@ chat:
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   group-formats:
+    Member: '&e{DISPLAYNAME}&f >&r {MESSAGE}'
+    VIP: '&0[&aVIP&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Moderator: '&0[&3Moderator&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Admin: '&0[&bAdmin&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    CoOwner: '&0[&4Co-Owner&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Owner: '&0[&4Owner&0] &e{DISPLAYNAME}&f >&r {MESSAGE}'
+    Helper: '&0[&dHelper&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
+    Lionheartian: '&0[&fLH&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
+    Youtuber: '&0[&cYoutuber&0] &e{DISPLAYNAME}&f>&r {MESSAGE}'
   #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
   #  Admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
 
